@@ -1,0 +1,301 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+// Reset
+@import "bootstrap/_normalize"
+@import "bootstrap/_print"
+//fonts
+@import "fonts/_open-sans"
+@import "fontello/fontello.scss"
+@import "fontello/fontello-codes"
+@import "fontello/fontello-ie7.scss"
+@import "fontello/fontello-ie7-codes"
+///////////////
+// Core variables and mixins
+@import "bootstrap/_variables"
+@import "bootstrap/_mixins"
+
+
+
+// Core CSS
+@import "bootstrap/_scaffolding"
+
+@import "bootstrap/_grid"
+@import "bootstrap/_buttons"
+@import "bootstrap/_button-groups"
+@import "bootstrap/_forms"
+@import "bootstrap/_type"
+@import "bootstrap/_modals"
+@import "bootstrap/_close"
+@import "bootstrap/_mixins"
+
+// Utility classes
+@import "bootstrap/_utilities"
+@import "bootstrap/_responsive-utilities"
+
+////////////////////////////////////////////////
+.container
+  max-width: none !important
+  width: 1170px 
+
+
+.kfp-font-size-10px
+  font-size: 10px
+
+.kfp-font-size-12px
+  font-size: 12px  
+
+.kfp-font-size-15px
+  font-size: 15px
+
+.kfp-font-size-17px
+  font-size: 17px
+
+.kfp-font-size-21px
+  font-size: 21px  
+
+.kfp-color-orange
+  color: $orange-color
+
+.kfp-color-gray
+  color: $gray-color  
+
+.btn-default, .btn-default:hover, .btn-default:active, .btn-default:visited
+  @include box-shadow(inset 0px -2px 0px 0px rgba(122,122,122,0.2) )
+  border-radius: 0px
+  border: 0px
+  color: $white-color
+  font-size: 15px
+
+.kfp-spisok
+  font-size: 15px
+  li
+    margin-bottom: 20px
+
+ul
+  padding-left: 20px   
+
+
+
+////////////////////////////////////header
+
+.kfp-header
+  padding-top: 15px
+  padding-bottom: 30px
+  .kfp-logo h4
+    color: $orange-color
+  .kfp-header-contact
+    color: $gray-color  
+
+.kfp-header-zakaz
+  margin-top: 10px
+  .btn-default
+    padding: 12px 40px
+    background-color: $orange-color
+    font-size: 15px
+    margin-left: -20px
+    margin-right: 50px
+
+//////////////end
+///////////////услуги
+.kfp-uslugi 
+  margin-bottom: 30px
+  .kfp-text-block
+    width: 265px
+    margin-left: auto
+    margin-right: auto
+  .container
+    padding: 50px 0px
+    border-bottom: 1px solid #edebe9
+  .kfp-img img
+    width: 100%
+
+.kfp-uslugi    
+  .kfp-img
+    height: 370px
+    margin-bottom: 50px
+  .kfp-img-nexus  
+    background: url("../img/nexus5.png") no-repeat 50% 100%
+  .kfp-img-ipad
+    background: url("../img/kormilica-ipad.png") no-repeat 50% 100%
+    background-size: contain
+  .kfp-img-imac
+    background: url("../img/kormilica-admin-imac.png") no-repeat 50% 100%
+////////////////////end услуги
+
+////////////kfp-busness
+
+.kfp-busness
+  margin-bottom: 90px
+  .btn-group
+    margin: 40px 0px
+    border: 1px solid #72b2e2
+    border-right: none
+    .btn-default
+      border-right: 2px solid #72b2e2
+      color: #72b2e2
+      padding: 13px 30px
+      box-shadow: none
+    .active
+      background: #72b2e2
+      color: $white-color  
+      font-weight: bold
+
+.kfp-busness .kfp-busness-info 
+  margin-top: 20px   
+  img
+    float: left
+    margin-right: 60px  
+  
+////////////////////end
+
+//////////////////преимущства
+.kfp-advantage
+  background: $orange-color
+  color: $white-color
+  padding-top: 70px
+  .btn-default
+    background: #edc550
+    padding: 13px 40px
+    font-weight: bold
+  .kfp-spisok
+    list-style-image: url("../img/ok.png")
+    padding-top: 15px
+  img
+    margin-top: 120px  
+//////////////////////end преимущества
+
+/////////////////заказ 
+.kfp-order
+  background: url("../img/phone.jpg") no-repeat 50% 90%
+  background-size: cover
+  padding-bottom: 110px
+  padding-top: 60px
+  color: $white-color
+  .kfp-spisok
+    list-style-image: url("../img/warn.png")
+    margin: 40px 0px
+  .btn-default
+    padding: 13px 50px
+    background: #ea7d53
+    font-weight: bold  
+
+//////////////////end
+
+///////////////отзывы
+.kfp-reviews
+  .kfp-review
+    height: 100px
+    margin-bottom: 65px
+    h4
+      padding-top: 20px
+  img
+    float: left
+    margin-right: 25px
+  .container
+    padding: 70px 0px
+    border-bottom: 1px solid #edebe9
+  .btn-default
+    padding: 13px 50px
+    background: #ea7d53
+    font-weight: bold     
+
+////////////////////////////end
+
+//////////////сервис
+.kfp-service
+  h2
+    margin: 50px 0px 60px 0px
+  .kfp-spisok
+    font-size: 13px
+    list-style-image: url("../img/ok-black.png")
+    padding-left: 40px
+    margin-bottom: 35px
+  .kfp-tarif p
+    color: $white-color
+    font-size: 15px
+    padding: 10px 0px
+    font-weight: bold
+  .btn-default
+    background: #a0d159 
+    padding: 13px 60px 
+    font-weight: bold
+    margin: 15px 0px 85px 0px
+
+
+.kfp-max
+  border: 1px solid #ef8e6f
+  padding-bottom: 40px
+  .kfp-tarif
+    background: #ef8e6f
+
+.kfp-standart
+  border: 1px solid #efc550
+  padding-bottom: 40px
+  .kfp-tarif
+    background: #efc550
+  .kfp-spisok li:nth-child(n+8)
+    list-style-image: url("../img/not.png") 
+    color: #a19d99 
+
+.kfp-min
+  border: 1px solid #91cecc
+  padding-bottom: 40px
+  .kfp-tarif
+    background: #91cecc
+  .kfp-spisok li:nth-child(n+6)
+    list-style-image: url("../img/not.png") 
+    color: #a19d99   
+
+//////////////end
+
+
+////////////// форма заявки
+.kfp-application, .modal-content
+  background: $orange-color
+  padding: 50px 0px 115px 0px
+  color: $white-color
+  h2
+    margin-bottom: 55px
+  .form-group
+    margin-bottom: 0px
+    .form-control
+      border-radius: 0px
+      height: 55px
+      font-size: 15px
+  .btn-default      
+    background: #a0d159
+    font-weight: bold
+    margin-top: 15px
+    padding: 15px 0px
+    font-size: 17px
+
+.modal-content
+  padding: 0px
+  .btn-default
+    margin: 10px 0px 40px 0px
+//////////////////////end
+
+
+//////////////footer
+
+.kfp-info-block
+  padding: 40px 0px 80px 0px
+  border-bottom: 1px solid #edebe9
+  .kfp-address
+    margin-top: 30px
+  h2
+    margin-bottom: 50px
+  img
+    float: left
+    margin-right: 55px
+
+.kfp-contact
+  padding: 60px 0px  
+  .btn-default
+    padding: 7px 45px
+    background: #ef8f6f
+    margin-top: 10px  
+
+//////////////////end
