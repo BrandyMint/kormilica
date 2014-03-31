@@ -16444,12 +16444,6 @@ address {
     margin: 30px auto;
   }
 
-  /* line 130, ../components/bootstrap/_modals.scss */
-  .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-
   /* line 135, ../components/bootstrap/_modals.scss */
   .modal-sm {
     width: 300px;
@@ -16487,6 +16481,201 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+}
+
+/* line 9, ../components/bootstrap/_navs.scss */
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* line 21, ../components/bootstrap/_mixins.scss */
+.nav:before, .nav:after {
+  content: " ";
+  display: table;
+}
+/* line 25, ../components/bootstrap/_mixins.scss */
+.nav:after {
+  clear: both;
+}
+/* line 15, ../components/bootstrap/_navs.scss */
+.nav > li {
+  position: relative;
+  display: block;
+}
+/* line 19, ../components/bootstrap/_navs.scss */
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+/* line 24, ../components/bootstrap/_navs.scss */
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+/* line 31, ../components/bootstrap/_navs.scss */
+.nav > li.disabled > a {
+  color: #999999;
+}
+/* line 35, ../components/bootstrap/_navs.scss */
+.nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+/* line 48, ../components/bootstrap/_navs.scss */
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #428bca;
+}
+/* line 59, ../components/bootstrap/_navs.scss */
+.nav .nav-divider {
+  height: 1px;
+  margin: 8px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+/* line 66, ../components/bootstrap/_navs.scss */
+.nav > li > a > img {
+  max-width: none;
+}
+
+/* line 76, ../components/bootstrap/_navs.scss */
+.nav-tabs {
+  border-bottom: 1px solid #dddddd;
+}
+/* line 78, ../components/bootstrap/_navs.scss */
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+/* line 84, ../components/bootstrap/_navs.scss */
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+/* line 89, ../components/bootstrap/_navs.scss */
+.nav-tabs > li > a:hover {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
+/* line 98, ../components/bootstrap/_navs.scss */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #555555;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+/* line 118, ../components/bootstrap/_navs.scss */
+.nav-pills > li {
+  float: left;
+}
+/* line 122, ../components/bootstrap/_navs.scss */
+.nav-pills > li > a {
+  border-radius: 4px;
+}
+/* line 125, ../components/bootstrap/_navs.scss */
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+/* line 133, ../components/bootstrap/_navs.scss */
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: white;
+  background-color: #428bca;
+}
+
+/* line 144, ../components/bootstrap/_navs.scss */
+.nav-stacked > li {
+  float: none;
+}
+/* line 146, ../components/bootstrap/_navs.scss */
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+/* line 160, ../components/bootstrap/_navs.scss */
+.nav-justified, .nav-tabs.nav-justified {
+  width: 100%;
+}
+/* line 163, ../components/bootstrap/_navs.scss */
+.nav-justified > li, .nav-tabs.nav-justified > li {
+  float: none;
+}
+/* line 165, ../components/bootstrap/_navs.scss */
+.nav-justified > li > a, .nav-tabs.nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+/* line 171, ../components/bootstrap/_navs.scss */
+.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  /* line 177, ../components/bootstrap/_navs.scss */
+  .nav-justified > li, .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  /* line 180, ../components/bootstrap/_navs.scss */
+  .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+
+/* line 190, ../components/bootstrap/_navs.scss */
+.nav-tabs-justified, .nav-tabs.nav-justified {
+  border-bottom: 0;
+}
+/* line 193, ../components/bootstrap/_navs.scss */
+.nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+/* line 201, ../components/bootstrap/_navs.scss */
+.nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
+.nav-tabs-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs-justified > .active > a:focus,
+.nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #dddddd;
+}
+@media (min-width: 768px) {
+  /* line 206, ../components/bootstrap/_navs.scss */
+  .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #dddddd;
+    border-radius: 4px 4px 0 0;
+  }
+  /* line 212, ../components/bootstrap/_navs.scss */
+  .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus,
+  .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: white;
+  }
+}
+
+/* line 224, ../components/bootstrap/_navs.scss */
+.tab-content > .tab-pane {
+  display: none;
+}
+/* line 227, ../components/bootstrap/_navs.scss */
+.tab-content > .active {
+  display: block;
+}
+
+/* line 237, ../components/bootstrap/_navs.scss */
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 /* line 21, ../components/bootstrap/_mixins.scss */
@@ -16750,48 +16939,48 @@ td.visible-print {
     display: none !important;
   }
 }
-/* line 38, ../sass/screen.sass */
+/* line 39, ../sass/screen.sass */
 .container {
   max-width: none !important;
   width: 1170px;
 }
 
-/* line 43, ../sass/screen.sass */
+/* line 44, ../sass/screen.sass */
 .kfp-font-size-10px {
   font-size: 10px;
 }
 
-/* line 46, ../sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 .kfp-font-size-12px {
   font-size: 12px;
 }
 
-/* line 49, ../sass/screen.sass */
+/* line 50, ../sass/screen.sass */
 .kfp-font-size-15px {
   font-size: 15px;
 }
 
-/* line 52, ../sass/screen.sass */
+/* line 53, ../sass/screen.sass */
 .kfp-font-size-17px {
   font-size: 17px;
 }
 
-/* line 55, ../sass/screen.sass */
+/* line 56, ../sass/screen.sass */
 .kfp-font-size-21px {
   font-size: 21px;
 }
 
-/* line 58, ../sass/screen.sass */
+/* line 59, ../sass/screen.sass */
 .kfp-color-orange {
   color: #ea7c53;
 }
 
-/* line 61, ../sass/screen.sass */
+/* line 62, ../sass/screen.sass */
 .kfp-color-gray {
   color: #686563;
 }
 
-/* line 64, ../sass/screen.sass */
+/* line 65, ../sass/screen.sass */
 .btn-default, .btn-default:hover, .btn-default:active, .btn-default:visited {
   -webkit-box-shadow: inset 0px -2px 0px 0px rgba(122, 122, 122, 0.2);
   box-shadow: inset 0px -2px 0px 0px rgba(122, 122, 122, 0.2);
@@ -16801,39 +16990,49 @@ td.visible-print {
   font-size: 15px;
 }
 
-/* line 71, ../sass/screen.sass */
+/* line 72, ../sass/screen.sass */
 .kfp-spisok {
   font-size: 15px;
 }
-/* line 73, ../sass/screen.sass */
+/* line 74, ../sass/screen.sass */
 .kfp-spisok li {
   margin-bottom: 20px;
 }
 
-/* line 76, ../sass/screen.sass */
+/* line 77, ../sass/screen.sass */
 ul {
   padding-left: 20px;
 }
 
-/* line 83, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
+h2 {
+  font-size: 29px;
+}
+
+/* line 85, ../sass/screen.sass */
 .kfp-header {
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 30px;
 }
-/* line 86, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 .kfp-header .kfp-logo h4 {
   color: #ea7c53;
 }
-/* line 88, ../sass/screen.sass */
+/* line 90, ../sass/screen.sass */
 .kfp-header .kfp-header-contact {
   color: #686563;
 }
 
-/* line 91, ../sass/screen.sass */
+/* line 94, ../sass/screen.sass */
+.kfp-zagolovok h2 {
+  line-height: 1.3;
+}
+
+/* line 97, ../sass/screen.sass */
 .kfp-header-zakaz {
   margin-top: 10px;
 }
-/* line 93, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 .kfp-header-zakaz .btn-default {
   padding: 12px 40px;
   background-color: #ea7c53;
@@ -16841,235 +17040,286 @@ ul {
   margin-left: -20px;
   margin-right: 50px;
 }
+/* line 105, ../sass/screen.sass */
+.kfp-header-zakaz .btn-default:hover {
+  background-color: #e45926;
+}
 
-/* line 102, ../sass/screen.sass */
+/* line 110, ../sass/screen.sass */
 .kfp-uslugi {
   margin-bottom: 30px;
 }
-/* line 104, ../sass/screen.sass */
+/* line 112, ../sass/screen.sass */
 .kfp-uslugi .kfp-text-block {
   width: 265px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 108, ../sass/screen.sass */
+/* line 116, ../sass/screen.sass */
 .kfp-uslugi .container {
   padding: 50px 0px;
   border-bottom: 1px solid #edebe9;
 }
-/* line 111, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 .kfp-uslugi .kfp-img img {
   width: 100%;
 }
 
-/* line 115, ../sass/screen.sass */
+/* line 123, ../sass/screen.sass */
 .kfp-uslugi .kfp-img {
   height: 370px;
   margin-bottom: 50px;
 }
-/* line 118, ../sass/screen.sass */
+/* line 126, ../sass/screen.sass */
 .kfp-uslugi .kfp-img-nexus {
   background: url("../img/nexus5.png") no-repeat 50% 100%;
 }
-/* line 120, ../sass/screen.sass */
+/* line 128, ../sass/screen.sass */
 .kfp-uslugi .kfp-img-ipad {
   background: url("../img/kormilica-ipad.png") no-repeat 50% 100%;
   background-size: contain;
 }
-/* line 123, ../sass/screen.sass */
+/* line 131, ../sass/screen.sass */
 .kfp-uslugi .kfp-img-imac {
   background: url("../img/kormilica-admin-imac.png") no-repeat 50% 100%;
 }
 
-/* line 129, ../sass/screen.sass */
+/* line 137, ../sass/screen.sass */
 .kfp-busness {
   margin-bottom: 90px;
 }
-/* line 131, ../sass/screen.sass */
-.kfp-busness .btn-group {
-  margin: 40px 0px;
-  border: 1px solid #72b2e2;
-  border-right: none;
+/* line 139, ../sass/screen.sass */
+.kfp-busness .kfp-tab {
+  list-style: none;
+  width: 600px;
+  margin: 40px auto 110px auto;
 }
-/* line 135, ../sass/screen.sass */
-.kfp-busness .btn-group .btn-default {
-  border-right: 2px solid #72b2e2;
-  color: #72b2e2;
-  padding: 13px 30px;
-  box-shadow: none;
-}
-/* line 140, ../sass/screen.sass */
-.kfp-busness .btn-group .active {
-  background: #72b2e2;
-  color: white;
-  font-weight: bold;
+/* line 143, ../sass/screen.sass */
+.kfp-busness .kfp-tab .btn {
+  border-radius: 0px;
 }
 
-/* line 145, ../sass/screen.sass */
+/* line 148, ../sass/screen.sass */
+.kfp-busness .kfp-tab li {
+  float: left;
+  border: 1px solid #72b2e2;
+}
+/* line 151, ../sass/screen.sass */
+.kfp-busness .kfp-tab li a {
+  color: #72b2e2;
+  padding: 10px 25px;
+  font-size: 15px;
+}
+/* line 155, ../sass/screen.sass */
+.kfp-busness .kfp-tab li a:hover {
+  background-color: #e6e6e6;
+}
+/* line 157, ../sass/screen.sass */
+.kfp-busness .kfp-tab .kfp-no-border {
+  border-left: none;
+}
+/* line 159, ../sass/screen.sass */
+.kfp-busness .kfp-tab .active a, .kfp-busness .kfp-tab .active a:hover {
+  background-color: #72b2e2;
+  color: white;
+}
+
+/* line 163, ../sass/screen.sass */
 .kfp-busness .kfp-busness-info {
   margin-top: 20px;
 }
-/* line 147, ../sass/screen.sass */
+/* line 165, ../sass/screen.sass */
 .kfp-busness .kfp-busness-info img {
   float: left;
   margin-right: 60px;
 }
 
-/* line 154, ../sass/screen.sass */
+/* line 172, ../sass/screen.sass */
+.kfp-section-advantage {
+  background: #ea7c53;
+}
+
+/* line 175, ../sass/screen.sass */
 .kfp-advantage {
   background: #ea7c53;
   color: white;
   padding-top: 70px;
 }
-/* line 158, ../sass/screen.sass */
+/* line 179, ../sass/screen.sass */
 .kfp-advantage .btn-default {
   background: #edc550;
   padding: 13px 40px;
   font-weight: bold;
 }
-/* line 162, ../sass/screen.sass */
+/* line 183, ../sass/screen.sass */
+.kfp-advantage .btn-default:hover {
+  background-color: #e8b622;
+}
+/* line 185, ../sass/screen.sass */
 .kfp-advantage .kfp-spisok {
   list-style-image: url("../img/ok.png");
   padding-top: 15px;
 }
-/* line 165, ../sass/screen.sass */
+/* line 188, ../sass/screen.sass */
 .kfp-advantage img {
   margin-top: 120px;
 }
 
-/* line 170, ../sass/screen.sass */
-.kfp-order {
+/* line 193, ../sass/screen.sass */
+.kfp-section-order {
   background: url("../img/phone.JPG") no-repeat 50% 90%;
   background-size: cover;
+}
+
+/* line 197, ../sass/screen.sass */
+.kfp-order {
   padding-bottom: 110px;
   padding-top: 60px;
   color: white;
 }
-/* line 176, ../sass/screen.sass */
+/* line 201, ../sass/screen.sass */
 .kfp-order .kfp-spisok {
   list-style-image: url("../img/warn.png");
   margin: 40px 0px;
 }
-/* line 179, ../sass/screen.sass */
+/* line 204, ../sass/screen.sass */
 .kfp-order .btn-default {
   padding: 13px 50px;
   background: #ea7d53;
   font-weight: bold;
 }
+/* line 208, ../sass/screen.sass */
+.kfp-order .btn-default:hover {
+  background-color: #e45b26;
+}
 
-/* line 188, ../sass/screen.sass */
+/* line 215, ../sass/screen.sass */
 .kfp-reviews .kfp-review {
   height: 100px;
   margin-bottom: 65px;
 }
-/* line 191, ../sass/screen.sass */
+/* line 218, ../sass/screen.sass */
 .kfp-reviews .kfp-review h4 {
   padding-top: 20px;
 }
-/* line 193, ../sass/screen.sass */
+/* line 220, ../sass/screen.sass */
 .kfp-reviews img {
   float: left;
   margin-right: 25px;
 }
-/* line 196, ../sass/screen.sass */
+/* line 223, ../sass/screen.sass */
 .kfp-reviews .container {
   padding: 70px 0px;
   border-bottom: 1px solid #edebe9;
 }
-/* line 199, ../sass/screen.sass */
+/* line 226, ../sass/screen.sass */
 .kfp-reviews .btn-default {
   padding: 13px 50px;
   background: #ea7d53;
   font-weight: bold;
 }
+/* line 230, ../sass/screen.sass */
+.kfp-reviews .btn-default:hover {
+  background-color: #e45b26;
+}
 
-/* line 208, ../sass/screen.sass */
+/* line 237, ../sass/screen.sass */
 .kfp-service h2 {
   margin: 50px 0px 60px 0px;
 }
-/* line 210, ../sass/screen.sass */
+/* line 239, ../sass/screen.sass */
 .kfp-service .kfp-spisok {
   font-size: 13px;
   list-style-image: url("../img/ok-black.png");
   padding-left: 40px;
   margin-bottom: 35px;
 }
-/* line 215, ../sass/screen.sass */
+/* line 244, ../sass/screen.sass */
 .kfp-service .kfp-tarif p {
   color: white;
   font-size: 15px;
   padding: 10px 0px;
   font-weight: bold;
 }
-/* line 220, ../sass/screen.sass */
+/* line 249, ../sass/screen.sass */
 .kfp-service .btn-default {
   background: #a0d159;
   padding: 13px 60px;
   font-weight: bold;
   margin: 15px 0px 85px 0px;
 }
+/* line 254, ../sass/screen.sass */
+.kfp-service .btn-default:hover {
+  background-color: #88c136;
+}
 
-/* line 227, ../sass/screen.sass */
+/* line 258, ../sass/screen.sass */
 .kfp-max {
   border: 1px solid #ef8e6f;
   padding-bottom: 40px;
 }
-/* line 230, ../sass/screen.sass */
+/* line 261, ../sass/screen.sass */
 .kfp-max .kfp-tarif {
   background: #ef8e6f;
 }
 
-/* line 233, ../sass/screen.sass */
+/* line 264, ../sass/screen.sass */
 .kfp-standart {
   border: 1px solid #efc550;
   padding-bottom: 40px;
 }
-/* line 236, ../sass/screen.sass */
+/* line 267, ../sass/screen.sass */
 .kfp-standart .kfp-tarif {
   background: #efc550;
 }
-/* line 238, ../sass/screen.sass */
+/* line 269, ../sass/screen.sass */
 .kfp-standart .kfp-spisok li:nth-child(n+8) {
   list-style-image: url("../img/not.png");
   color: #a19d99;
 }
 
-/* line 242, ../sass/screen.sass */
+/* line 273, ../sass/screen.sass */
 .kfp-min {
   border: 1px solid #91cecc;
   padding-bottom: 40px;
 }
-/* line 245, ../sass/screen.sass */
+/* line 276, ../sass/screen.sass */
 .kfp-min .kfp-tarif {
   background: #91cecc;
 }
-/* line 247, ../sass/screen.sass */
+/* line 278, ../sass/screen.sass */
 .kfp-min .kfp-spisok li:nth-child(n+6) {
   list-style-image: url("../img/not.png");
   color: #a19d99;
 }
 
-/* line 255, ../sass/screen.sass */
+/* line 286, ../sass/screen.sass */
+.kfp-section-application {
+  background: #ea7c53;
+}
+
+/* line 289, ../sass/screen.sass */
 .kfp-application, .modal-content {
   background: #ea7c53;
   padding: 50px 0px 115px 0px;
   color: white;
 }
-/* line 259, ../sass/screen.sass */
+/* line 293, ../sass/screen.sass */
 .kfp-application h2, .modal-content h2 {
   margin-bottom: 55px;
 }
-/* line 261, ../sass/screen.sass */
+/* line 295, ../sass/screen.sass */
 .kfp-application .form-group, .modal-content .form-group {
   margin-bottom: 0px;
 }
-/* line 263, ../sass/screen.sass */
+/* line 297, ../sass/screen.sass */
 .kfp-application .form-group .form-control, .modal-content .form-group .form-control {
+  border: 0px;
   border-radius: 0px;
   height: 55px;
   font-size: 15px;
 }
-/* line 267, ../sass/screen.sass */
+/* line 302, ../sass/screen.sass */
 .kfp-application .btn-default, .modal-content .btn-default {
   background: #a0d159;
   font-weight: bold;
@@ -17077,42 +17327,54 @@ ul {
   padding: 15px 0px;
   font-size: 17px;
 }
+/* line 308, ../sass/screen.sass */
+.kfp-application .btn-default:hover, .modal-content .btn-default:hover {
+  background-color: #88c136;
+}
 
-/* line 274, ../sass/screen.sass */
+/* line 312, ../sass/screen.sass */
 .modal-content {
   padding: 0px;
 }
-/* line 276, ../sass/screen.sass */
+/* line 314, ../sass/screen.sass */
 .modal-content .btn-default {
   margin: 10px 0px 40px 0px;
 }
+/* line 316, ../sass/screen.sass */
+.modal-content h2 {
+  margin-bottom: 30px;
+}
 
-/* line 283, ../sass/screen.sass */
+/* line 323, ../sass/screen.sass */
 .kfp-info-block {
   padding: 40px 0px 80px 0px;
   border-bottom: 1px solid #edebe9;
 }
-/* line 286, ../sass/screen.sass */
+/* line 326, ../sass/screen.sass */
 .kfp-info-block .kfp-address {
   margin-top: 30px;
 }
-/* line 288, ../sass/screen.sass */
+/* line 328, ../sass/screen.sass */
 .kfp-info-block h2 {
   margin-bottom: 50px;
 }
-/* line 290, ../sass/screen.sass */
+/* line 330, ../sass/screen.sass */
 .kfp-info-block img {
   float: left;
   margin-right: 55px;
 }
 
-/* line 294, ../sass/screen.sass */
+/* line 334, ../sass/screen.sass */
 .kfp-contact {
   padding: 60px 0px;
 }
-/* line 296, ../sass/screen.sass */
+/* line 336, ../sass/screen.sass */
 .kfp-contact .btn-default {
   padding: 7px 45px;
   background: #ef8f6f;
   margin-top: 10px;
+}
+/* line 340, ../sass/screen.sass */
+.kfp-contact .btn-default:hover {
+  background-color: #ea6b41;
 }
