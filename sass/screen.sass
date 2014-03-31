@@ -8,7 +8,7 @@
 //fonts
 @import "fonts/_open-sans"
 @import "fontello/fontello.scss"
-@import "fontello/fontello-codes"
+@import "fontello/fontello-codes.scss"
 @import "fontello/fontello-ie7.scss"
 @import "fontello/fontello-ie7-codes"
 ///////////////
@@ -38,7 +38,8 @@
 ////////////////////////////////////////////////
 .container
   max-width: none !important
-  width: 1170px 
+  width: 1170px
+  -webkit-font-smoothing: antialiased 
 
 
 .kfp-font-size-10px
@@ -71,15 +72,20 @@
 
 .kfp-spisok
   font-size: 15px
+  list-style: none
   li
-    margin-bottom: 20px
-
-ul
-  padding-left: 20px   
+    margin-bottom: 20px  
 
 h2
   font-size: 29px
 
+.icon-check, .icon-cancel
+  margin-left: -25px
+
+.icon-warning
+  margin-left: -40px
+  margin-right: 10px 
+  font-size: 13px 
 ////////////////////////////////////header
 
 .kfp-header
@@ -138,7 +144,7 @@ h2
   margin-bottom: 90px
   .kfp-tab
     list-style: none
-    width: 600px
+    width: 630px
     margin: 40px auto 110px auto
     .btn
       border-radius: 0px
@@ -183,7 +189,7 @@ h2
   .btn-default:hover
     background-color: darken(#edc550, 10%)  
   .kfp-spisok
-    list-style-image: url("../img/ok.png")
+    margin-left: -20px
     padding-top: 15px
   img
     margin-top: 120px  
@@ -198,8 +204,7 @@ h2
   padding-bottom: 110px
   padding-top: 60px
   color: $white-color
-  .kfp-spisok
-    list-style-image: url("../img/warn.png")
+  .kfp-spisok 
     margin: 40px 0px
   .btn-default
     padding: 13px 50px
@@ -238,7 +243,6 @@ h2
     margin: 50px 0px 60px 0px
   .kfp-spisok
     font-size: 13px
-    list-style-image: url("../img/ok-black.png")
     padding-left: 40px
     margin-bottom: 35px
   .kfp-tarif p
@@ -267,7 +271,6 @@ h2
   .kfp-tarif
     background: #efc550
   .kfp-spisok li:nth-child(n+8)
-    list-style-image: url("../img/not.png") 
     color: #a19d99 
 
 .kfp-min
@@ -276,7 +279,6 @@ h2
   .kfp-tarif
     background: #91cecc
   .kfp-spisok li:nth-child(n+6)
-    list-style-image: url("../img/not.png") 
     color: #a19d99   
 
 //////////////end
