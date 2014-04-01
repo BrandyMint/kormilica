@@ -4324,10 +4324,14 @@ h2 {
   display: block;
 }
 /* line 357, ../sass/screen.sass */
+#myModal-ok .modal-dialog {
+  transform: translate(0, 0);
+}
+/* line 359, ../sass/screen.sass */
 #myModal-ok .modal-body {
   padding-top: 0px;
 }
-/* line 359, ../sass/screen.sass */
+/* line 361, ../sass/screen.sass */
 #myModal-ok .icon-check {
   border-radius: 100px;
   font-size: 45px;
@@ -4338,7 +4342,7 @@ h2 {
   height: 100px;
   margin: 50px auto 0px auto;
 }
-/* line 368, ../sass/screen.sass */
+/* line 370, ../sass/screen.sass */
 #myModal-ok a, #myModal-ok a:hover, #myModal-ok a:visited, #myModal-ok a:active, #myModal-ok a:focus {
   color: white;
   text-decoration: none;
