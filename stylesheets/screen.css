@@ -4007,7 +4007,7 @@ h2 {
 
 /* line 133, ../sass/screen.sass */
 .kfp-uslugi .kfp-img {
-  height: 350px;
+  height: 370px;
   margin-bottom: 50px;
 }
 /* line 136, ../sass/screen.sass */
@@ -4021,8 +4021,8 @@ h2 {
 }
 /* line 141, ../sass/screen.sass */
 .kfp-uslugi .kfp-img-imac {
-  background: url("../img/kormilica-admin-imac-new.png") no-repeat 50% 100%;
-  background-size: 420px 350px;
+  background: url("../img/kormilica-admin-imac-1.png") no-repeat 50% 100%;
+  background-size: contain;
 }
 
 /* line 148, ../sass/screen.sass */
