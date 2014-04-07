@@ -4104,159 +4104,160 @@ h2 {
 /* line 199, ../sass/screen.sass */
 .kfp-advantage img {
   margin-top: 120px;
+  width: 100%;
 }
 
-/* line 204, ../sass/screen.sass */
+/* line 205, ../sass/screen.sass */
 .kfp-section-order {
   background: url("../img/phone.JPG") no-repeat 50% 90%;
   background-size: cover;
 }
 
-/* line 208, ../sass/screen.sass */
+/* line 209, ../sass/screen.sass */
 .kfp-order {
   padding-bottom: 110px;
   padding-top: 60px;
   color: white;
 }
-/* line 212, ../sass/screen.sass */
+/* line 213, ../sass/screen.sass */
 .kfp-order .kfp-spisok {
   margin: 40px 0px;
 }
-/* line 214, ../sass/screen.sass */
+/* line 215, ../sass/screen.sass */
 .kfp-order .btn-default {
   padding: 13px 50px;
   background: #ea7d53;
   font-weight: bold;
 }
-/* line 218, ../sass/screen.sass */
+/* line 219, ../sass/screen.sass */
 .kfp-order .btn-default:hover {
   background-color: #e45b26;
 }
 
-/* line 225, ../sass/screen.sass */
+/* line 226, ../sass/screen.sass */
 .kfp-reviews .kfp-review {
   height: 100px;
   margin-bottom: 65px;
 }
-/* line 228, ../sass/screen.sass */
+/* line 229, ../sass/screen.sass */
 .kfp-reviews .kfp-review h4 {
   padding-top: 20px;
 }
-/* line 230, ../sass/screen.sass */
+/* line 231, ../sass/screen.sass */
 .kfp-reviews img {
   float: left;
   margin-right: 25px;
 }
-/* line 233, ../sass/screen.sass */
+/* line 234, ../sass/screen.sass */
 .kfp-reviews .container {
   padding: 70px 0px;
   border-bottom: 1px solid #edebe9;
 }
-/* line 236, ../sass/screen.sass */
+/* line 237, ../sass/screen.sass */
 .kfp-reviews .btn-default {
   padding: 13px 50px;
   background: #ea7d53;
   font-weight: bold;
 }
-/* line 240, ../sass/screen.sass */
+/* line 241, ../sass/screen.sass */
 .kfp-reviews .btn-default:hover {
   background-color: #e45b26;
 }
 
-/* line 247, ../sass/screen.sass */
+/* line 248, ../sass/screen.sass */
 .kfp-service h2 {
   margin: 50px 0px 60px 0px;
 }
-/* line 249, ../sass/screen.sass */
+/* line 250, ../sass/screen.sass */
 .kfp-service .kfp-spisok {
   font-size: 13px;
   padding-left: 40px;
   margin-bottom: 35px;
 }
-/* line 253, ../sass/screen.sass */
+/* line 254, ../sass/screen.sass */
 .kfp-service .kfp-tarif p {
   color: white;
   font-size: 15px;
   padding: 10px 0px;
   font-weight: bold;
 }
-/* line 258, ../sass/screen.sass */
+/* line 259, ../sass/screen.sass */
 .kfp-service .btn-default {
   background: #a0d159;
   padding: 13px 60px;
   font-weight: bold;
   margin: 15px 0px 85px 0px;
 }
-/* line 263, ../sass/screen.sass */
+/* line 264, ../sass/screen.sass */
 .kfp-service .btn-default:hover {
   background-color: #88c136;
 }
 
-/* line 267, ../sass/screen.sass */
+/* line 268, ../sass/screen.sass */
 .kfp-max {
   border: 1px solid #ef8e6f;
   padding-bottom: 40px;
 }
-/* line 270, ../sass/screen.sass */
+/* line 271, ../sass/screen.sass */
 .kfp-max .kfp-tarif {
   background: #ef8e6f;
 }
 
-/* line 273, ../sass/screen.sass */
+/* line 274, ../sass/screen.sass */
 .kfp-standart {
   border: 1px solid #efc550;
   padding-bottom: 40px;
 }
-/* line 276, ../sass/screen.sass */
+/* line 277, ../sass/screen.sass */
 .kfp-standart .kfp-tarif {
   background: #efc550;
 }
-/* line 278, ../sass/screen.sass */
+/* line 279, ../sass/screen.sass */
 .kfp-standart .kfp-spisok li:nth-child(n+8) {
   color: #a19d99;
 }
 
-/* line 281, ../sass/screen.sass */
+/* line 282, ../sass/screen.sass */
 .kfp-min {
   border: 1px solid #91cecc;
   padding-bottom: 40px;
 }
-/* line 284, ../sass/screen.sass */
+/* line 285, ../sass/screen.sass */
 .kfp-min .kfp-tarif {
   background: #91cecc;
 }
-/* line 286, ../sass/screen.sass */
+/* line 287, ../sass/screen.sass */
 .kfp-min .kfp-spisok li:nth-child(n+6) {
   color: #a19d99;
 }
 
-/* line 293, ../sass/screen.sass */
+/* line 294, ../sass/screen.sass */
 .kfp-section-application {
   background: #ea7c53;
 }
 
-/* line 296, ../sass/screen.sass */
+/* line 297, ../sass/screen.sass */
 .kfp-application, .modal-content {
   background: #ea7c53;
   padding: 50px 0px 115px 0px;
   color: white;
 }
-/* line 300, ../sass/screen.sass */
+/* line 301, ../sass/screen.sass */
 .kfp-application h2, .modal-content h2 {
   margin-bottom: 55px;
 }
-/* line 302, ../sass/screen.sass */
+/* line 303, ../sass/screen.sass */
 .kfp-application .form-group, .modal-content .form-group {
   margin-bottom: 0px;
 }
-/* line 304, ../sass/screen.sass */
+/* line 305, ../sass/screen.sass */
 .kfp-application .form-group .form-control, .modal-content .form-group .form-control {
   border: 0px;
   border-radius: 0px;
   height: 55px;
   font-size: 15px;
 }
-/* line 309, ../sass/screen.sass */
+/* line 310, ../sass/screen.sass */
 .kfp-application .btn-default, .modal-content .btn-default {
   background: #a0d159;
   font-weight: bold;
@@ -4264,77 +4265,77 @@ h2 {
   padding: 15px 0px;
   font-size: 17px;
 }
-/* line 315, ../sass/screen.sass */
+/* line 316, ../sass/screen.sass */
 .kfp-application .btn-default:hover, .modal-content .btn-default:hover {
   background-color: #88c136;
 }
 
-/* line 319, ../sass/screen.sass */
+/* line 320, ../sass/screen.sass */
 .modal-content {
   padding: 0px;
 }
-/* line 321, ../sass/screen.sass */
+/* line 322, ../sass/screen.sass */
 .modal-content .btn-default {
   margin: 10px 0px 40px 0px;
 }
-/* line 323, ../sass/screen.sass */
+/* line 324, ../sass/screen.sass */
 .modal-content h2 {
   margin-bottom: 30px;
 }
 
-/* line 330, ../sass/screen.sass */
+/* line 331, ../sass/screen.sass */
 .kfp-info-block {
   padding: 40px 0px 80px 0px;
   border-bottom: 1px solid #edebe9;
 }
-/* line 333, ../sass/screen.sass */
+/* line 334, ../sass/screen.sass */
 .kfp-info-block .kfp-address {
   margin-top: 30px;
 }
-/* line 335, ../sass/screen.sass */
+/* line 336, ../sass/screen.sass */
 .kfp-info-block h2 {
   margin-bottom: 50px;
 }
-/* line 337, ../sass/screen.sass */
+/* line 338, ../sass/screen.sass */
 .kfp-info-block img {
   float: left;
   margin-right: 55px;
 }
-/* line 340, ../sass/screen.sass */
+/* line 341, ../sass/screen.sass */
 .kfp-info-block .kfp-phone-call, .kfp-info-block .kfp-phone-call:hover, .kfp-info-block .kfp-phone-call:active, .kfp-info-block .kfp-phone-call:visited {
   color: black;
 }
 
-/* line 343, ../sass/screen.sass */
+/* line 344, ../sass/screen.sass */
 .kfp-contact {
   padding: 60px 0px;
 }
-/* line 345, ../sass/screen.sass */
+/* line 346, ../sass/screen.sass */
 .kfp-contact .btn-default {
   padding: 7px 45px;
   background: #ef8f6f;
   margin-top: 10px;
 }
-/* line 349, ../sass/screen.sass */
+/* line 350, ../sass/screen.sass */
 .kfp-contact .btn-default:hover {
   background-color: #ea6b41;
 }
 
-/* line 356, ../sass/screen.sass */
+/* line 357, ../sass/screen.sass */
 #myModal-ok {
   display: block;
 }
-/* line 358, ../sass/screen.sass */
+/* line 359, ../sass/screen.sass */
 #myModal-ok .modal-dialog {
   transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
 }
-/* line 362, ../sass/screen.sass */
+/* line 363, ../sass/screen.sass */
 #myModal-ok .modal-body {
   padding-top: 0px;
 }
-/* line 364, ../sass/screen.sass */
+/* line 365, ../sass/screen.sass */
 #myModal-ok .icon-check {
   border-radius: 100px;
   font-size: 45px;
@@ -4345,7 +4346,7 @@ h2 {
   height: 100px;
   margin: 50px auto 0px auto;
 }
-/* line 373, ../sass/screen.sass */
+/* line 374, ../sass/screen.sass */
 #myModal-ok a, #myModal-ok a:hover, #myModal-ok a:visited, #myModal-ok a:active, #myModal-ok a:focus {
   color: white;
   text-decoration: none;
