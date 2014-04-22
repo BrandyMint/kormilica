@@ -1,0 +1,188 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+// Reset
+@import "bootstrap/_normalize"
+@import "bootstrap/_print"
+//fonts
+@import "fonts/_open-sans"
+@import "fontello/fontello.scss"
+@import "fontello/fontello-codes.scss"
+@import "fontello/fontello-ie7.scss"
+@import "fontello/fontello-ie7-codes"
+///////////////
+// Core variables and mixins
+@import "bootstrap/_variables"
+@import "bootstrap/_mixins"
+
+
+
+// Core CSS
+@import "bootstrap/_scaffolding"
+
+@import "bootstrap/_grid"
+@import "bootstrap/_buttons"
+@import "bootstrap/_button-groups"
+@import "bootstrap/_forms"
+@import "bootstrap/_type"
+@import "bootstrap/_modals"
+@import "bootstrap/_mixins"
+@import "bootstrap/_navs"
+
+// Utility classes
+@import "bootstrap/_utilities"
+@import "bootstrap/_responsive-utilities"
+
+///////my style
+@import "_header"
+@import "_footer"
+@import "_icon"
+
+////////////////////////////////////////////////
+
+
+.container
+  @media (max-width: $screen-sm-max)
+    width: $container-md  
+  -webkit-font-smoothing: antialiased 
+
+.footer-container
+  @media (max-width: 1024px)
+    display: none
+
+body
+  background-color: #EEEEEE
+  color: #686868
+
+
+.large-number
+  font-size: 25px
+///////////current-orders
+.header-orders
+  margin-top: 20px
+  border-bottom: 1px solid #eee
+  background-color: #fff
+
+.select-option
+  margin-top: 25px
+  background-color: #EEEEEE
+  border: 0px
+  padding-left: 5px
+
+.current-orders
+  height: 938px
+  overflow: auto
+  margin-bottom: 20px
+  background-color: #fff
+  border-bottom: 2px solid #DFDFDF
+  .group-admin
+    margin-top: 20px
+    .btn
+      margin-top: -10px
+  .single-order
+    margin-top: 5px
+    margin-bottom: 5px
+    padding-bottom: 10px
+    border-bottom: 1px solid #EEEEEE
+  .btn
+    border: 0px
+    padding: 0px
+  .icon-map, .icon-trash, .icon-pencil, .icon-check-empty
+    font-size: 20px 
+
+.single-order .date-order
+  margin-top: -10px
+  margin-left: 30px  
+
+.current-orders .inactive-order
+  .price, .order-number
+    color: #F2795A
+
+.current-orders .active-order
+  .price, .order-number
+    color: #73BBB7   
+
+.current-orders .empty-order
+  height: 60px
+
+//////////////////end
+
+/////////////sales
+.second-block
+  margin-left: 30px
+  width: 47%
+
+.sales
+  background-color: #fff
+  margin-top: 20px
+  border-bottom: 2px solid #DFDFDF
+  margin-bottom: 30px
+  img
+    width: 100%
+  .sales-number
+    padding-top: 25px
+
+.sales-footer
+  border-top: 1px solid #eee 
+  padding-top: 15px 
+
+
+///////end
+
+///////////clients 
+.clients, .new-clients, .downloads
+  background-color: #fff
+  border-bottom: 2px solid #DFDFDF
+  padding: 10px 0px
+  width: 31%
+  p
+    margin: 0px
+
+.clients, .new-clients
+  margin-right: 19px  
+
+.downloads>p
+  margin-bottom: 5px
+
+.container
+  @media (max-width: $screen-md-max)
+    .clients, .new-clients
+      margin-right: 15px
+
+/////////end
+
+
+
+///////last action
+.last-action-body
+  height: 350px
+  overflow: auto
+  border-bottom: 2px solid #DFDFDF
+
+.last-action
+  background-color: #fff
+  margin-top: 30px
+
+.header-action
+  border-bottom: 1px solid #eee
+  margin-bottom: 20px
+
+.action-status, .action-edited
+  margin-bottom: 10px
+  p
+    margin-bottom: 0px
+
+.action-status
+  .action-done
+    color: #98C589
+  .action-cancel
+    color: #F38468  
+
+
+//////////////////////////end
+
+//////////_footer
+footer
+  margin-top: 20px
+////////////////end
