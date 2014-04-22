@@ -1,0 +1,15 @@
+.current-orders
+  input[type="checkbox"]
+    display: none
+  input[type="checkbox"] + .checkbox span
+    display: inline-block
+    width: 21px
+    height: 20px
+    vertical-align: middle
+    background: url("../img/check-no.png") no-repeat
+    cursor: pointer
+    position: relative
+    top: 20px
+    left: -20px
+  input[type="checkbox"]:checked + .checkbox span
+    background: url("../img/check-yes.png") no-repeat

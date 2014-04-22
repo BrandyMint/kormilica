@@ -38,6 +38,7 @@
 @import "_header"
 @import "_footer"
 @import "_icon"
+@import "_checkbox"
 
 ////////////////////////////////////////////////
 
@@ -70,16 +71,14 @@ body
   border: 0px
   padding-left: 5px
 
+
+
 .current-orders
-  height: 938px
+  height: 945px
   overflow: auto
   margin-bottom: 20px
   background-color: #fff
   border-bottom: 2px solid #DFDFDF
-  .group-admin
-    margin-top: 20px
-    .btn
-      margin-top: -10px
   .single-order
     margin-top: 5px
     margin-bottom: 5px
@@ -101,7 +100,9 @@ body
 
 .current-orders .active-order
   .price, .order-number
-    color: #73BBB7   
+    color: #73BBB7
+
+  
 
 .current-orders .empty-order
   height: 60px
@@ -125,7 +126,10 @@ body
 
 .sales-footer
   border-top: 1px solid #eee 
-  padding-top: 15px 
+  padding-top: 15px
+  .summa
+    position: relative
+    left: 40px
 
 
 ///////end
@@ -157,8 +161,17 @@ body
 ///////last action
 .last-action-body
   height: 350px
+  @media (max-width: $screen-md-max)
+    height: 390px
   overflow: auto
   border-bottom: 2px solid #DFDFDF
+  .action-spisok
+    list-style-type: none
+    padding-left: 10px
+    li
+      padding-left: 5px
+  .action-spisok li:nth-child(even) 
+    background-color: #F1F1F1 
 
 .last-action
   background-color: #fff
