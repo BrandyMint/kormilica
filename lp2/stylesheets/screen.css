@@ -4211,12 +4211,12 @@ body {
 }
 
 /* line 98, ../sass/screen.sass */
-.current-orders .inactive-order .price, .current-orders .inactive-order .order-number {
+.current-orders .inactive-order .price, .current-orders .inactive-order .order-number, .current-orders .inactive-order a {
   color: #f2795a;
 }
 
 /* line 102, ../sass/screen.sass */
-.current-orders .active-order .price, .current-orders .active-order .order-number {
+.current-orders .active-order .price, .current-orders .active-order .order-number, .current-orders .active-order a {
   color: #73bbb7;
 }
 
