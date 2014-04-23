@@ -4184,200 +4184,223 @@ body {
 /* line 78, ../sass/screen.sass */
 .current-orders {
   height: 945px;
-  overflow: auto;
   margin-bottom: 20px;
   background-color: white;
   border-bottom: 2px solid #dfdfdf;
 }
-/* line 84, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 .current-orders .single-order {
-  margin-top: 5px;
-  margin-bottom: 5px;
   padding-bottom: 10px;
   border-bottom: 1px solid #eeeeee;
 }
-/* line 89, ../sass/screen.sass */
+/* line 86, ../sass/screen.sass */
 .current-orders .btn {
   border: 0px;
   padding: 0px;
 }
-/* line 92, ../sass/screen.sass */
+/* line 89, ../sass/screen.sass */
 .current-orders .icon-map, .current-orders .icon-trash, .current-orders .icon-pencil, .current-orders .icon-check-empty {
   font-size: 20px;
 }
 
-/* line 95, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 .single-order .date-order {
   margin-top: -10px;
   margin-left: 30px;
 }
 
-/* line 100, ../sass/screen.sass */
+/* line 97, ../sass/screen.sass */
 .current-orders .inactive-order .price, .current-orders .inactive-order .order-number {
   color: #f2795a;
 }
 
-/* line 104, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 .current-orders .active-order .price, .current-orders .active-order .order-number {
   color: #73bbb7;
 }
 
-/* line 109, ../sass/screen.sass */
+/* line 106, ../sass/screen.sass */
 .current-orders .empty-order {
   height: 60px;
 }
 
-/* line 112, ../sass/screen.sass */
+/* line 109, ../sass/screen.sass */
 .choised-order {
   background-color: #fafafa;
 }
+/* line 111, ../sass/screen.sass */
+.choised-order .price {
+  position: relative;
+  background-color: #fafafa;
+}
+/* line 114, ../sass/screen.sass */
+.choised-order .price:after {
+  left: 100%;
+  top: 90%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #fafafa;
+  border-width: 12px;
+  margin-top: -15px;
+}
 
-/* line 118, ../sass/screen.sass */
+/* line 131, ../sass/screen.sass */
 .second-block {
   margin-left: 30px;
   width: 47%;
 }
 
-/* line 122, ../sass/screen.sass */
+/* line 135, ../sass/screen.sass */
+.first-block {
+  width: 49%;
+  margin-right: 10px;
+}
+
+/* line 139, ../sass/screen.sass */
 .sales {
   background-color: white;
   margin-top: 20px;
   border-bottom: 2px solid #dfdfdf;
   margin-bottom: 30px;
 }
-/* line 127, ../sass/screen.sass */
+/* line 144, ../sass/screen.sass */
 .sales img {
   width: 100%;
 }
-/* line 129, ../sass/screen.sass */
+/* line 146, ../sass/screen.sass */
 .sales .sales-number {
   padding-top: 25px;
 }
 
-/* line 132, ../sass/screen.sass */
+/* line 149, ../sass/screen.sass */
 .sales-footer {
   border-top: 1px solid #eeeeee;
   padding-top: 15px;
 }
-/* line 135, ../sass/screen.sass */
+/* line 152, ../sass/screen.sass */
 .sales-footer .summa {
   position: relative;
   left: 40px;
 }
 
-/* line 143, ../sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 .clients, .new-clients, .downloads {
   background-color: white;
   border-bottom: 2px solid #dfdfdf;
   padding: 10px 0px;
   width: 31%;
 }
-/* line 148, ../sass/screen.sass */
+/* line 165, ../sass/screen.sass */
 .clients p, .new-clients p, .downloads p {
   margin: 0px;
 }
 
-/* line 151, ../sass/screen.sass */
+/* line 168, ../sass/screen.sass */
 .clients, .new-clients {
   margin-right: 19px;
 }
 
-/* line 154, ../sass/screen.sass */
+/* line 171, ../sass/screen.sass */
 .downloads > p {
   margin-bottom: 5px;
 }
 
 @media (max-width: 1199px) {
-  /* line 159, ../sass/screen.sass */
+  /* line 176, ../sass/screen.sass */
   .container .clients, .container .new-clients {
     margin-right: 15px;
   }
 }
 
-/* line 167, ../sass/screen.sass */
+/* line 184, ../sass/screen.sass */
 .last-action-body {
   height: 350px;
-  overflow: auto;
-  border-bottom: 2px solid #dfdfdf;
+  overflow-y: auto;
 }
 @media (max-width: 1199px) {
-  /* line 167, ../sass/screen.sass */
+  /* line 184, ../sass/screen.sass */
   .last-action-body {
     height: 390px;
+    border-bottom: 2px solid #dfdfdf;
   }
 }
-/* line 173, ../sass/screen.sass */
+/* line 190, ../sass/screen.sass */
 .last-action-body .action-spisok {
   list-style-type: none;
   padding-left: 10px;
 }
-/* line 176, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
 .last-action-body .action-spisok li {
   padding-left: 5px;
 }
-/* line 178, ../sass/screen.sass */
+/* line 195, ../sass/screen.sass */
 .last-action-body .action-spisok li:nth-child(even) {
   background-color: #f1f1f1;
 }
 
-/* line 181, ../sass/screen.sass */
+/* line 198, ../sass/screen.sass */
 .last-action {
   background-color: white;
   margin-top: 30px;
 }
 
-/* line 185, ../sass/screen.sass */
+/* line 202, ../sass/screen.sass */
 .header-action {
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 20px;
 }
 
-/* line 189, ../sass/screen.sass */
+/* line 206, ../sass/screen.sass */
 .action-status, .action-edited {
   margin-bottom: 10px;
 }
-/* line 191, ../sass/screen.sass */
+/* line 208, ../sass/screen.sass */
 .action-status p, .action-edited p {
   margin-bottom: 0px;
 }
 
-/* line 195, ../sass/screen.sass */
+/* line 212, ../sass/screen.sass */
 .action-status .action-done {
   color: #98c589;
 }
-/* line 197, ../sass/screen.sass */
+/* line 214, ../sass/screen.sass */
 .action-status .action-cancel {
   color: #f38468;
 }
 
-/* line 204, ../sass/screen.sass */
+/* line 221, ../sass/screen.sass */
 footer {
   margin-top: 20px;
 }
 
-/* line 210, ../sass/screen.sass */
+/* line 227, ../sass/screen.sass */
 .address {
   background-color: white;
   margin: 30px 0px;
   border-bottom: 2px solid #dfdfdf;
   padding-bottom: 20px;
 }
-/* line 215, ../sass/screen.sass */
+/* line 232, ../sass/screen.sass */
 .address p {
   margin: 0px;
 }
-/* line 217, ../sass/screen.sass */
+/* line 234, ../sass/screen.sass */
 .address h3 {
   margin-bottom: 0px;
 }
 
-/* line 220, ../sass/screen.sass */
+/* line 237, ../sass/screen.sass */
 .map-address {
   background-color: white;
   margin: 0px 0px 20px 0px;
   padding-bottom: 30px;
 }
-/* line 224, ../sass/screen.sass */
+/* line 241, ../sass/screen.sass */
 .map-address h3 {
   margin-bottom: 10px;
   padding-bottom: 20px;

@@ -77,13 +77,10 @@ body
 
 .current-orders
   height: 945px
-  overflow: auto
   margin-bottom: 20px
   background-color: #fff
   border-bottom: 2px solid #DFDFDF
   .single-order
-    margin-top: 5px
-    margin-bottom: 5px
     padding-bottom: 10px
     border-bottom: 1px solid #EEEEEE
   .btn
@@ -110,7 +107,23 @@ body
   height: 60px
 
 .choised-order
-  background-color: #fafafa  
+  background-color: #fafafa
+  .price
+    position: relative
+    background-color: #fafafa
+    &:after
+      left: 100%
+      top: 90%
+      border:  solid transparent
+      content: " "
+      height: 0
+      width: 0
+      position: absolute
+      pointer-events: none
+      border-color: rgba(255, 255, 255, 0)
+      border-left-color: #fafafa
+      border-width: 12px
+      margin-top: -15px   
 
 //////////////////end
 
@@ -118,6 +131,10 @@ body
 .second-block
   margin-left: 30px
   width: 47%
+
+.first-block
+  width: 49%
+  margin-right: 10px  
 
 .sales
   background-color: #fff
@@ -166,10 +183,10 @@ body
 ///////last action
 .last-action-body
   height: 350px
+  overflow-y: auto
   @media (max-width: $screen-md-max)
     height: 390px
-  overflow: auto
-  border-bottom: 2px solid #DFDFDF
+    border-bottom: 2px solid #DFDFDF
   .action-spisok
     list-style-type: none
     padding-left: 10px
@@ -215,7 +232,7 @@ footer
   p
     margin: 0px
   h3
-    margin-bottom: 0px  
+    margin-bottom: 0px
 
 .map-address
   background-color: #fff
