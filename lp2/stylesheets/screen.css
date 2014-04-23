@@ -4081,7 +4081,7 @@ footer .excel-img {
 .selected-order {
   background-color: white;
   border-bottom: 2px solid #dfdfdf;
-  margin: 20px 0px 0px 0px;
+  margin: 20px -15px 0px 0px;
   padding-bottom: 12px;
 }
 /* line 6, ../sass/_select-order.sass */
@@ -4184,223 +4184,220 @@ body {
 /* line 78, ../sass/screen.sass */
 .current-orders {
   height: 945px;
+  overflow-y: auto;
   margin-bottom: 20px;
   background-color: white;
   border-bottom: 2px solid #dfdfdf;
 }
-/* line 83, ../sass/screen.sass */
+/* line 84, ../sass/screen.sass */
 .current-orders .single-order {
   padding-bottom: 10px;
   border-bottom: 1px solid #eeeeee;
 }
-/* line 86, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 .current-orders .btn {
   border: 0px;
   padding: 0px;
 }
-/* line 89, ../sass/screen.sass */
+/* line 90, ../sass/screen.sass */
 .current-orders .icon-map, .current-orders .icon-trash, .current-orders .icon-pencil, .current-orders .icon-check-empty {
   font-size: 20px;
 }
 
-/* line 92, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 .single-order .date-order {
   margin-top: -10px;
   margin-left: 30px;
 }
 
-/* line 97, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 .current-orders .inactive-order .price, .current-orders .inactive-order .order-number {
   color: #f2795a;
 }
 
-/* line 101, ../sass/screen.sass */
+/* line 102, ../sass/screen.sass */
 .current-orders .active-order .price, .current-orders .active-order .order-number {
   color: #73bbb7;
 }
 
-/* line 106, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 .current-orders .empty-order {
   height: 60px;
 }
 
-/* line 109, ../sass/screen.sass */
+/* line 110, ../sass/screen.sass */
 .choised-order {
   background-color: #fafafa;
 }
-/* line 111, ../sass/screen.sass */
-.choised-order .price {
-  position: relative;
-  background-color: #fafafa;
-}
-/* line 114, ../sass/screen.sass */
-.choised-order .price:after {
-  left: 100%;
-  top: 90%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(255, 255, 255, 0);
-  border-left-color: #fafafa;
-  border-width: 12px;
-  margin-top: -15px;
-}
 
-/* line 131, ../sass/screen.sass */
+/*.price
+ * position: relative
+ * background-color: #fafafa
+ * &:after
+ *   left: 100%
+ *   top: 90%
+ *   border:  solid transparent
+ *   content: " "
+ *   height: 0
+ *   width: 0
+ *   position: absolute
+ *   pointer-events: none
+ *   border-color: rgba(255, 255, 255, 0)
+ *   border-left-color: #fafafa
+ *   border-width: 12px
+ *   margin-top: -15px */
+/* line 132, ../sass/screen.sass */
 .second-block {
   margin-left: 30px;
   width: 47%;
 }
 
-/* line 135, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 .first-block {
   width: 49%;
   margin-right: 10px;
 }
 
-/* line 139, ../sass/screen.sass */
+/* line 140, ../sass/screen.sass */
 .sales {
   background-color: white;
   margin-top: 20px;
   border-bottom: 2px solid #dfdfdf;
   margin-bottom: 30px;
 }
-/* line 144, ../sass/screen.sass */
+/* line 145, ../sass/screen.sass */
 .sales img {
   width: 100%;
 }
-/* line 146, ../sass/screen.sass */
+/* line 147, ../sass/screen.sass */
 .sales .sales-number {
   padding-top: 25px;
 }
 
-/* line 149, ../sass/screen.sass */
+/* line 150, ../sass/screen.sass */
 .sales-footer {
   border-top: 1px solid #eeeeee;
   padding-top: 15px;
 }
-/* line 152, ../sass/screen.sass */
+/* line 153, ../sass/screen.sass */
 .sales-footer .summa {
   position: relative;
   left: 40px;
 }
 
-/* line 160, ../sass/screen.sass */
+/* line 161, ../sass/screen.sass */
 .clients, .new-clients, .downloads {
   background-color: white;
   border-bottom: 2px solid #dfdfdf;
   padding: 10px 0px;
   width: 31%;
 }
-/* line 165, ../sass/screen.sass */
+/* line 166, ../sass/screen.sass */
 .clients p, .new-clients p, .downloads p {
   margin: 0px;
 }
 
-/* line 168, ../sass/screen.sass */
+/* line 169, ../sass/screen.sass */
 .clients, .new-clients {
   margin-right: 19px;
 }
 
-/* line 171, ../sass/screen.sass */
+/* line 172, ../sass/screen.sass */
 .downloads > p {
   margin-bottom: 5px;
 }
 
 @media (max-width: 1199px) {
-  /* line 176, ../sass/screen.sass */
+  /* line 177, ../sass/screen.sass */
   .container .clients, .container .new-clients {
     margin-right: 15px;
   }
 }
 
-/* line 184, ../sass/screen.sass */
+/* line 185, ../sass/screen.sass */
 .last-action-body {
   height: 350px;
   overflow-y: auto;
 }
 @media (max-width: 1199px) {
-  /* line 184, ../sass/screen.sass */
+  /* line 185, ../sass/screen.sass */
   .last-action-body {
     height: 390px;
     border-bottom: 2px solid #dfdfdf;
   }
 }
-/* line 190, ../sass/screen.sass */
+/* line 191, ../sass/screen.sass */
 .last-action-body .action-spisok {
   list-style-type: none;
   padding-left: 10px;
 }
-/* line 193, ../sass/screen.sass */
+/* line 194, ../sass/screen.sass */
 .last-action-body .action-spisok li {
   padding-left: 5px;
 }
-/* line 195, ../sass/screen.sass */
+/* line 196, ../sass/screen.sass */
 .last-action-body .action-spisok li:nth-child(even) {
   background-color: #f1f1f1;
 }
 
-/* line 198, ../sass/screen.sass */
+/* line 199, ../sass/screen.sass */
 .last-action {
   background-color: white;
   margin-top: 30px;
 }
 
-/* line 202, ../sass/screen.sass */
+/* line 203, ../sass/screen.sass */
 .header-action {
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 20px;
 }
 
-/* line 206, ../sass/screen.sass */
+/* line 207, ../sass/screen.sass */
 .action-status, .action-edited {
   margin-bottom: 10px;
 }
-/* line 208, ../sass/screen.sass */
+/* line 209, ../sass/screen.sass */
 .action-status p, .action-edited p {
   margin-bottom: 0px;
 }
 
-/* line 212, ../sass/screen.sass */
+/* line 213, ../sass/screen.sass */
 .action-status .action-done {
   color: #98c589;
 }
-/* line 214, ../sass/screen.sass */
+/* line 215, ../sass/screen.sass */
 .action-status .action-cancel {
   color: #f38468;
 }
 
-/* line 221, ../sass/screen.sass */
+/* line 222, ../sass/screen.sass */
 footer {
   margin-top: 20px;
 }
 
-/* line 227, ../sass/screen.sass */
+/* line 228, ../sass/screen.sass */
 .address {
   background-color: white;
-  margin: 30px 0px;
+  margin: 30px -15px 30px 0px;
   border-bottom: 2px solid #dfdfdf;
   padding-bottom: 20px;
 }
-/* line 232, ../sass/screen.sass */
+/* line 233, ../sass/screen.sass */
 .address p {
   margin: 0px;
 }
-/* line 234, ../sass/screen.sass */
+/* line 235, ../sass/screen.sass */
 .address h3 {
   margin-bottom: 0px;
 }
 
-/* line 237, ../sass/screen.sass */
+/* line 238, ../sass/screen.sass */
 .map-address {
   background-color: white;
-  margin: 0px 0px 20px 0px;
+  margin: 0px -15px 20px 0px;
   padding-bottom: 30px;
 }
-/* line 241, ../sass/screen.sass */
+/* line 242, ../sass/screen.sass */
 .map-address h3 {
   margin-bottom: 10px;
   padding-bottom: 20px;
