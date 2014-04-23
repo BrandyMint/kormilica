@@ -84,6 +84,8 @@ body
   .single-order
     padding-bottom: 10px
     border-bottom: 1px solid #EEEEEE
+    &:hover
+      background-color: #fafafa
   .btn
     border: 0px
     padding: 0px
@@ -95,13 +97,15 @@ body
   margin-left: 30px  
 
 .current-orders .inactive-order
-  .price, .order-number, a
+  .price, .order-number
     color: #F2795A
 
 .current-orders .active-order
-  .price, .order-number, a
+  .price, .order-number
     color: #73BBB7
 
+.link-block
+  display: block
   
 
 .current-orders .empty-order

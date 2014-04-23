@@ -4195,37 +4195,46 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 /* line 87, ../sass/screen.sass */
+.current-orders .single-order:hover {
+  background-color: #fafafa;
+}
+/* line 89, ../sass/screen.sass */
 .current-orders .btn {
   border: 0px;
   padding: 0px;
 }
-/* line 90, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 .current-orders .icon-map, .current-orders .icon-trash, .current-orders .icon-pencil, .current-orders .icon-check-empty {
   font-size: 20px;
 }
 
-/* line 93, ../sass/screen.sass */
+/* line 95, ../sass/screen.sass */
 .single-order .date-order {
   margin-top: -10px;
   margin-left: 30px;
 }
 
-/* line 98, ../sass/screen.sass */
-.current-orders .inactive-order .price, .current-orders .inactive-order .order-number, .current-orders .inactive-order a {
+/* line 100, ../sass/screen.sass */
+.current-orders .inactive-order .price, .current-orders .inactive-order .order-number {
   color: #f2795a;
 }
 
-/* line 102, ../sass/screen.sass */
-.current-orders .active-order .price, .current-orders .active-order .order-number, .current-orders .active-order a {
+/* line 104, ../sass/screen.sass */
+.current-orders .active-order .price, .current-orders .active-order .order-number {
   color: #73bbb7;
 }
 
 /* line 107, ../sass/screen.sass */
+.link-block {
+  display: block;
+}
+
+/* line 111, ../sass/screen.sass */
 .current-orders .empty-order {
   height: 60px;
 }
 
-/* line 110, ../sass/screen.sass */
+/* line 114, ../sass/screen.sass */
 .choised-order {
   background-color: #fafafa;
 }
@@ -4246,158 +4255,158 @@ body {
  *   border-left-color: #fafafa
  *   border-width: 12px
  *   margin-top: -15px */
-/* line 132, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 .second-block {
   margin-left: 30px;
   width: 47%;
 }
 
-/* line 136, ../sass/screen.sass */
+/* line 140, ../sass/screen.sass */
 .first-block {
   width: 49%;
   margin-right: 10px;
 }
 
-/* line 140, ../sass/screen.sass */
+/* line 144, ../sass/screen.sass */
 .sales {
   background-color: white;
   margin-top: 20px;
   border-bottom: 2px solid #dfdfdf;
   margin-bottom: 30px;
 }
-/* line 145, ../sass/screen.sass */
+/* line 149, ../sass/screen.sass */
 .sales img {
   width: 100%;
 }
-/* line 147, ../sass/screen.sass */
+/* line 151, ../sass/screen.sass */
 .sales .sales-number {
   padding-top: 25px;
 }
 
-/* line 150, ../sass/screen.sass */
+/* line 154, ../sass/screen.sass */
 .sales-footer {
   border-top: 1px solid #eeeeee;
   padding-top: 15px;
 }
-/* line 153, ../sass/screen.sass */
+/* line 157, ../sass/screen.sass */
 .sales-footer .summa {
   position: relative;
   left: 40px;
 }
 
-/* line 161, ../sass/screen.sass */
+/* line 165, ../sass/screen.sass */
 .clients, .new-clients, .downloads {
   background-color: white;
   border-bottom: 2px solid #dfdfdf;
   padding: 10px 0px;
   width: 31%;
 }
-/* line 166, ../sass/screen.sass */
+/* line 170, ../sass/screen.sass */
 .clients p, .new-clients p, .downloads p {
   margin: 0px;
 }
 
-/* line 169, ../sass/screen.sass */
+/* line 173, ../sass/screen.sass */
 .clients, .new-clients {
   margin-right: 19px;
 }
 
-/* line 172, ../sass/screen.sass */
+/* line 176, ../sass/screen.sass */
 .downloads > p {
   margin-bottom: 5px;
 }
 
 @media (max-width: 1199px) {
-  /* line 177, ../sass/screen.sass */
+  /* line 181, ../sass/screen.sass */
   .container .clients, .container .new-clients {
     margin-right: 15px;
   }
 }
 
-/* line 185, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 .last-action-body {
   height: 350px;
   overflow-y: auto;
 }
 @media (max-width: 1199px) {
-  /* line 185, ../sass/screen.sass */
+  /* line 189, ../sass/screen.sass */
   .last-action-body {
     height: 390px;
     border-bottom: 2px solid #dfdfdf;
   }
 }
-/* line 191, ../sass/screen.sass */
+/* line 195, ../sass/screen.sass */
 .last-action-body .action-spisok {
   list-style-type: none;
   padding-left: 10px;
 }
-/* line 194, ../sass/screen.sass */
+/* line 198, ../sass/screen.sass */
 .last-action-body .action-spisok li {
   padding-left: 5px;
 }
-/* line 196, ../sass/screen.sass */
+/* line 200, ../sass/screen.sass */
 .last-action-body .action-spisok li:nth-child(even) {
   background-color: #f1f1f1;
 }
 
-/* line 199, ../sass/screen.sass */
+/* line 203, ../sass/screen.sass */
 .last-action {
   background-color: white;
   margin-top: 30px;
 }
 
-/* line 203, ../sass/screen.sass */
+/* line 207, ../sass/screen.sass */
 .header-action {
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 20px;
 }
 
-/* line 207, ../sass/screen.sass */
+/* line 211, ../sass/screen.sass */
 .action-status, .action-edited {
   margin-bottom: 10px;
 }
-/* line 209, ../sass/screen.sass */
+/* line 213, ../sass/screen.sass */
 .action-status p, .action-edited p {
   margin-bottom: 0px;
 }
 
-/* line 213, ../sass/screen.sass */
+/* line 217, ../sass/screen.sass */
 .action-status .action-done {
   color: #98c589;
 }
-/* line 215, ../sass/screen.sass */
+/* line 219, ../sass/screen.sass */
 .action-status .action-cancel {
   color: #f38468;
 }
 
-/* line 222, ../sass/screen.sass */
+/* line 226, ../sass/screen.sass */
 footer {
   margin-top: 20px;
 }
 
-/* line 228, ../sass/screen.sass */
+/* line 232, ../sass/screen.sass */
 .address {
   background-color: white;
   margin: 30px -15px 30px 0px;
   border-bottom: 2px solid #dfdfdf;
   padding-bottom: 20px;
 }
-/* line 233, ../sass/screen.sass */
+/* line 237, ../sass/screen.sass */
 .address p {
   margin: 0px;
 }
-/* line 235, ../sass/screen.sass */
+/* line 239, ../sass/screen.sass */
 .address h3 {
   margin-bottom: 0px;
 }
 
-/* line 238, ../sass/screen.sass */
+/* line 242, ../sass/screen.sass */
 .map-address {
   background-color: white;
   margin: 0px -15px 20px 0px;
   padding-bottom: 30px;
 }
-/* line 242, ../sass/screen.sass */
+/* line 246, ../sass/screen.sass */
 .map-address h3 {
   margin-bottom: 10px;
   padding-bottom: 20px;
