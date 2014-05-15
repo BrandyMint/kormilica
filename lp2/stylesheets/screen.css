@@ -4235,7 +4235,7 @@ body {
 }
 
 /* line 114, ../sass/screen.sass */
-.choised-order {
+.choised-order, .choised-client {
   background-color: #fafafa;
 }
 
@@ -4416,4 +4416,105 @@ footer {
   margin-bottom: 10px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eeeeee;
+}
+
+/* line 257, ../sass/screen.sass */
+.vitrina-order-page, .clients-page {
+  color: #9d9d9d;
+}
+
+/* line 261, ../sass/screen.sass */
+.vitrina-choices .price, .vitrina-choices .order-number, .clients-block .price, .clients-block .order-number {
+  color: #73bbb7;
+}
+/* line 263, ../sass/screen.sass */
+.vitrina-choices .description, .clients-block .description {
+  color: #9d9d9d;
+}
+/* line 265, ../sass/screen.sass */
+.vitrina-choices .new-product, .clients-block .new-product {
+  color: #f49982;
+}
+
+/* line 268, ../sass/screen.sass */
+.selected-choice-product, .selected-choice-client {
+  padding-top: 20px;
+  margin: 0px 0px 10px 0px;
+}
+/* line 271, ../sass/screen.sass */
+.selected-choice-product img, .selected-choice-client img {
+  float: left;
+  margin: 0px 10px 10px 0px;
+}
+/* line 274, ../sass/screen.sass */
+.selected-choice-product h2, .selected-choice-client h2 {
+  margin-top: 0px;
+  font-size: 26px;
+}
+/* line 277, ../sass/screen.sass */
+.selected-choice-product .price-product, .selected-choice-client .price-product {
+  color: #f2795a;
+  font-size: 36px;
+}
+/* line 280, ../sass/screen.sass */
+.selected-choice-product .icon-rouble, .selected-choice-client .icon-rouble {
+  font-size: 27px;
+}
+
+/* line 283, ../sass/screen.sass */
+.selected-choice-product .name-product {
+  padding-right: 0px;
+}
+
+/* line 287, ../sass/screen.sass */
+.selected-choice .group-admin {
+  margin: 0px;
+  margin-top: -10px;
+}
+/* line 290, ../sass/screen.sass */
+.selected-choice .choice-product-new {
+  color: #73bbb7;
+  font-size: 9px;
+  margin-top: 55px;
+}
+/* line 294, ../sass/screen.sass */
+.selected-choice .choice-product-new .not {
+  display: inline-block;
+  border: 1px solid #73bbb7;
+  padding: 0px 2px 0px 2px;
+  font-size: 13px;
+}
+
+/* line 303, ../sass/screen.sass */
+.conditions {
+  background-color: white;
+  margin: 30px -15px 30px 0px;
+  border-bottom: 2px solid #dfdfdf;
+  padding-bottom: 20px;
+}
+/* line 308, ../sass/screen.sass */
+.conditions h3 {
+  margin-bottom: 0px;
+}
+
+/* line 312, ../sass/screen.sass */
+.discount .number, .action .number, .address-client .number, .tel-client .number {
+  display: inline-block;
+  border: 1px solid;
+  padding: 0px 5px 0px 5px;
+  margin: 0px 1px 0px 1px;
+}
+
+/* line 318, ../sass/screen.sass */
+.action .number-first {
+  margin-left: 5px;
+}
+
+/* line 322, ../sass/screen.sass */
+.client-block {
+  margin-bottom: 30px;
+}
+/* line 324, ../sass/screen.sass */
+.client-block .address-client, .client-block .tel-client {
+  line-height: 1.1;
 }
