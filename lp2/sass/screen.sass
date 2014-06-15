@@ -17,7 +17,6 @@
 @import "bootstrap/_mixins"
 
 
-
 // Core CSS
 @import "bootstrap/_scaffolding"
 
@@ -27,298 +26,27 @@
 @import "bootstrap/_forms"
 @import "bootstrap/_type"
 @import "bootstrap/_modals"
-@import "bootstrap/_mixins"
 @import "bootstrap/_navs"
 
 // Utility classes
 @import "bootstrap/_utilities"
 @import "bootstrap/_responsive-utilities"
 
-///////my style
+///////////////////////////////////////////my style
+@import "_my_variables"
 @import "_header"
 @import "_footer"
 @import "_icon"
 @import "_checkbox"
 @import "_select-order"
+@import "_global"
+@import "_current-orders"
+@import "_sales"
+@import "_clients"
+@import "_last-action"
+@import "_address"
+@import "_vitrina"
+@import "_conditions"
 
+////////////////////////////////////////////////  
 
-////////////////////////////////////////////////
-
-
-.container
-  @media (max-width: $screen-sm-max)
-    width: $container-md  
-  -webkit-font-smoothing: antialiased 
-
-body
-  background-color: #EEEEEE
-  color: #686868
-
-
-.large-number
-  font-size: 25px
-///////////current-orders
-.header-orders
-  margin-top: 20px
-  border-bottom: 1px solid #eee
-  background-color: #fff
-
-.select-option
-  margin-top: 25px
-  padding-left: 5px
-
-
-
-.current-orders
-  margin-bottom: 20px
-  background-color: #fff
-  border-bottom: 2px solid #DFDFDF
-  .single-order
-    border-bottom: 1px solid #EEEEEE
-    &:hover
-      background-color: #fafafa
-  .btn
-    border: 0px
-    padding: 0px
-  .icon-map, .icon-trash, .icon-pencil, .icon-check-empty
-    font-size: 20px 
-
-.single-order .date-order
-  margin-top: -10px
-  margin-left: 30px  
-
-.current-orders .inactive-order
-  .price, .order-number
-    color: #F2795A
-
-.current-orders .active-order
-  .price, .order-number
-    color: #73BBB7
-
-.link-block
-  display: block
-  
-
-.current-orders .empty-order
-  height: 60px
-
-.choised-order, .choised-client
-  background-color: #fafafa
-  .price
-    position: relative
-    background-color: #fafafa
-    &:after
-      left: 100%
-      top: 70%
-      border:  solid transparent
-      content: " "
-      height: 0
-      width: 0
-      position: absolute
-      pointer-events: none
-      border-color: rgba(255, 255, 255, 0)
-      border-left-color: #fafafa
-      border-width: 12px
-      margin-top: -15px
-
-//////////////////end
-
-/////////////sales
-.second-block
-  margin-left: 15px
-  margin-right: -15px
-
-.first-block
-  width: 49%
-  margin-right: 5px  
-
-.sales
-  background-color: #fff
-  margin-top: 20px
-  border-bottom: 2px solid #DFDFDF
-  margin-bottom: 30px
-  img
-    width: 100%
-  .sales-number
-    padding-top: 25px
-
-.sales-footer
-  border-top: 1px solid #eee 
-  padding-top: 15px
-  .summa
-    position: relative
-    left: 40px
-
-
-///////end
-
-///////////clients 
-.clients, .new-clients, .downloads
-  background-color: #fff
-  border-bottom: 2px solid #DFDFDF
-  padding: 10px 0px
-  width: 31%
-  p
-    margin: 0px
-
-.clients, .new-clients
-  margin-right: 19px  
-
-.downloads>p
-  margin-bottom: 5px
-
-.container
-  @media (max-width: $screen-md-max)
-    .clients, .new-clients
-      margin-right: 15px
-
-/////////end
-
-
-
-///////last action
-.last-action-body
-  height: 330px
-  overflow-y: auto
-  @media (max-width: $screen-md-max)
-    height: 380px
-    border-bottom: 2px solid #DFDFDF
-  .action-spisok
-    list-style-type: none
-    padding-left: 10px
-    li
-      padding-left: 5px
-  .action-spisok li:nth-child(even) 
-    background-color: #F1F1F1 
-
-.last-action
-  background-color: #fff
-  margin-top: 30px
-  padding-right: 15px
-  .select-option
-    margin-right: -15px
-
-.header-action
-  border-bottom: 1px solid #eee
-  margin-bottom: 20px
-
-.action-status, .action-edited
-  margin-bottom: 10px
-  p
-    margin-bottom: 0px
-
-.action-status
-  .action-done
-    color: #98C589
-  .action-cancel
-    color: #F38468  
-
-
-//////////////////////////end
-
-//////////_footer
-footer
-  margin-top: 20px
-////////////////end
-
-///////////selected-order.HTML
-//////////address
-.address
-  background-color: #fff
-  margin: 30px -15px 30px 0px
-  border-bottom: 2px solid #DFDFDF
-  padding-bottom: 20px
-  p
-    margin: 0px
-  h3
-    margin-bottom: 0px
-
-.map-address
-  background-color: #fff
-  margin: 0px -15px 20px 0px
-  padding-bottom: 30px
-  h3
-    margin-bottom: 10px
-    padding-bottom: 20px
-    border-bottom: 1px solid #eee
-
-/////////////////////////////////////////end selected-order.HTML
-
-/////////////////////////////////////vitrina-order.HTML
-.vitrina-order-page, .clients-page
-  color: #9D9D9D
-
-.vitrina-choices, .clients-block
-  .price, .order-number
-    color: #73BBB7
-  .description
-    color: #9D9D9D  
-    margin-top: -10px
-  .new-product
-    color: #F49982  
-
-.clients-block .order-number
-  margin-top: -7px
-
-.selected-choice-product, .selected-choice-client
-  padding-top: 20px
-  margin: 0px 0px 10px 0px
-  img
-    float: left
-    margin: 0px 10px 10px 0px
-  h2
-    margin-top: 0px
-    font-size: 26px
-  .price-product
-    color: #F2795A 
-    font-size: 36px  
-  .icon-rouble
-    font-size: 27px   
-
-.selected-choice-product .name-product
-  padding-right: 0px
-
-.selected-choice   
-  .group-admin
-    margin: 0px 
-    margin-top: -10px
-  .choice-product-new
-    color: #73BBB7
-    font-size: 9px 
-    margin-top: 55px
-    .not     
-      display: inline-block
-      border: 1px solid #73BBB7
-      padding: 0px 2px 0px 2px
-      font-size: 13px
-    
-.group-admin img
-  display: block
-  margin: 0 auto
-  margin-top: 10px
-/////////////////////////////////end
-
-//////////////////////////////conditions
-.conditions
-  background-color: #fff
-  margin: 30px -15px 30px 0px
-  border-bottom: 2px solid #DFDFDF
-  padding-bottom: 20px
-  h3
-    margin-bottom: 0px
-
-.discount, .action, .address-client, .tel-client
-  .number
-    display: inline-block
-    border: 1px solid
-    padding: 0px 5px 0px 5px
-    margin: 0px 1px 0px 1px
-
-.action .number-first
-  margin-left: 5px    
-
-///////////////////////////////////////clients page  
-.client-block
-  margin-bottom: 30px
-  .address-client, .tel-client
-    line-height: 1.1

@@ -1,0 +1,39 @@
+///////last action
+.last-action-body
+  height: 330px
+  overflow-y: auto
+  @media (max-width: $screen-md-max)
+    height: 380px
+    border-bottom: 2px solid $border-block-color
+  .action-spisok
+    list-style-type: none
+    padding-left: $padding-small-horizontal
+    li
+      padding-left: $padding-small-vertical
+  .action-spisok li:nth-child(even) 
+    background-color: $event-bg-color
+
+.last-action
+  background-color: $white-color
+  margin-top: $big-size-space
+  padding-right: $small-size-space
+  .select-option
+    margin-right: -15px
+
+.header-action
+  border-bottom: 1px solid $body-bg-color
+  margin-bottom: $middle-size-space
+
+.action-status, .action-edited
+  margin-bottom: $padding-small-horizontal
+  p
+    margin-bottom: 0px
+
+.action-status
+  .action-done
+    color: $text-done-color
+  .action-cancel
+    color: $text-cancel-color  
+
+
+//////////////////////////end
